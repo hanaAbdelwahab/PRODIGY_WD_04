@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Kode+Mono:wght@400..700&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url(download1.jpeg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.title{
+    text-align: center;
+    border-bottom: 2px solid;
+    border-radius: 80%;
+    display: inline-block;
+    font-size: 3em;
+}
+header {
+    color: black;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.5s ease;
+    backdrop-filter: blur(5px);
+}
+
+#logo {
+    width: 110px;
+    height: 50px;
+    margin-top: 10px;
+    transition: visibility 0.5s ease;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation a {
+    color: black;
+    text-decoration: none;
+    margin-right: 1em;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+main {
+    padding: 2em;
+    margin-bottom: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: rgba(245, 245, 245, 0.63);
+    border: none;
+    color: black;
+    padding: 0.5em 1em;
+    font-size: 1.3em;
+    text-decoration: none;
+    margin-top: 16em;
+    display: inline-block;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: white; 
+}
+#headerlogo {
+    color: rgba(245, 245, 245, 0.658);
+    font-size: 120px;
+    margin-top: 20;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease;
+    letter-spacing: 7px;
+}
+
+header.scrolled {
+    background-color: rgba(255, 255, 255, 0.488);
+}
+
+header.scrolled #logo {
+    visibility: visible;
+}
+
+header.scrolled #headerlogo {
+    opacity: 0;
+}
+
+.card {
+    background-color: white;
+    width: 15em;
+    height: auto;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
+    padding: 10px; 
+    margin: 15px;
+    transition: 0.7s ease;
+    position: relative;
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 90%; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+.info{
+text-align: center;
+color:lightslategray
+}
+.info h3{
+    color: darkslategray;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+.info a {
+    text-decoration: none; 
+    color: inherit; 
+    font-size: 1.2em;
+}
+.info a:hover {
+    color: goldenrod; 
+}
+#work{
+       
+    background-color: #fff;
+}
+.cardA {
+    background-color: rgb(209, 208, 208);
+    width: 15em;
+    height: auto;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
+    padding: 10px; 
+    margin: 15px;
+    transition: 0.7s ease;
+    position: relative;
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px;
+}
+
+.cardA img {
+    width: 100%;
+    height: 70%; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+#contentA {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+#Achievements h2 {
+    text-align: center;
+    border-bottom: 2px solid;
+    border-radius: 80%;
+    display: inline-block;
+    font-size: 3em;
+}
+.cardA:hover {
+    transform: scale(1.1);
+}
+  #all {
+    display: flex;
+    align-items: center;
+  }
+  
+  #all h2 {
+    margin: 0;
+    margin-right: 20px;
+  }
+  
+  #all > div {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #all img {
+    width: 30em;
+    height: 30em;
+    border-radius: 40%;
+    margin: 0 20px 20px 0;
+  }
+  #about h2{
+    text-align: center;
+    border-bottom: 2px solid;
+    border-radius: 80%;
+    display: inline-block;
+    font-size: 3em;
+  }
+  #about{
+    margin-top: 20px;
+    padding: 20px;
+  }
+  #Achievements{
+    margin-top: 70px;
+    background-color: rgb(232, 231, 231);
+    padding-top: 20px;
+  }
+  
+  #Address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 70px;
+    background-color: rgb(232, 231, 231);
+    padding: 20px;
+}
+
+#Address h2 {
+    text-align: center;
+    width: 100%; 
+    margin-bottom: 10px; 
+    
+}
+.cardAdd {
+    background-color: white;
+    width: calc(33.33% - 30px); 
+    height: auto;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
+    padding: 10px;
+    margin: 15px;
+    transition: 0.7s ease;
+    position: relative;
+    border-radius: 20px;
+}
+
+.cardAdd h2 {
+    text-align: center;
+    margin-bottom: 10px; 
+}
+
+.cardAdd .infoAdd {
+    text-align: center;
+}
+
+.cardAdd .infoAdd a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.cardAdd .infoAdd a:hover {
+    color: goldenrod;
+}
+
+footer {
+    background-color: #33333355;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
